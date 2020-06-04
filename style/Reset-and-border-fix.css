@@ -18,7 +18,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+    border: 0;
+    /* border: 1px solid grey; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -50,6 +51,8 @@ table {
 /* Universal Box Sizing with Inheritance */
 html {
     box-sizing: border-box;
+    max-width: 100%;
+    font-size: 62.5%;
   }
   *, *:before, *:after {
     box-sizing: inherit;
