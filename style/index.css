@@ -49,7 +49,8 @@ nav, .nav-links{
 header{
     height: 40vh;
     width: 100%;
-    background-image: url(https://picsum.photos/id/237/200/300);
+    background-image: url(https://picsum.photos/1920/800);
+    background-repeat: no-repeat;
     padding: .2rem;
     display: flex;
     flex-direction: column;
