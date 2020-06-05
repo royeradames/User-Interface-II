@@ -1,1 +1,132 @@
-/* Add CSS styling here */
+/* Add CSS styling here Royer Adames */
+html{
+    font-family: 'Roboto', sans-serif;
+    
+}
+h1{
+    font-size: 3.6rem;
+}
+h2{
+    font-size: 2.6rem;
+    margin-top: 1.5rem;
+}
+p, a{
+    font-size: 1.8rem;
+}
+p{
+    margin: 2.5rem 0;
+}
+/* center main body */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav, header, section, footer{
+    margin: 2.5rem 0;
+}
+/* navigation */
+nav, .nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-logo{
+    width: 80%;
+}
+.nav-logo img{
+    width: 100%;
+}
+.nav-links a{
+    text-decoration: none;
+    padding: 2rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+/* header */
+header{
+    height: 40vh;
+    width: 100%;
+    background-image: url(https://picsum.photos/1920/800);
+    background-repeat: no-repeat;
+    padding: .2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-container{
+    color: white;
+    padding: .2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section */
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    height: 25vh;
+}
+.footer-container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fab{
+    font-size: 4rem;
+    color: black;
+}
+
+/* desktop version */
+@media only screen and (min-width: 600px){
+    /* nav */
+    nav, .nav-links{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav{
+        width: 100%;
+    }
+    .nav-logo{
+        width: 40%;
+    }
+
+    /* section */
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .project-container{
+        width: 30%;
+    }
+
+    .fab{
+        font-size: 8rem;
+        color: black;
+        margin: 0 2rem;
+    }
+    .copy-write{
+        font-size: 2.5rem;
+    }
+}
