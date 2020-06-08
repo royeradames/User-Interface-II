@@ -20,6 +20,11 @@ p, a{
 p{
     margin: 2.5rem 0;
 }
+.button{
+    padding: 2rem;
+    text-decoration: none;
+    letter-spacing: 1rem;
+}
 /* center main body */
 body{
     display: flex;
@@ -98,11 +103,16 @@ footer{
     background-color: grey;
     height: 25vh;
 }
-.footer-container{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-button{
+    border: .1rem solid white;
+    color: white;
+
+}
+.footer-button:hover{
+    background-color: white;
+    color: black;
+    border: none;
+    transition: 1.8s;
 }
 .fab{
     font-size: 8rem;
@@ -110,5 +120,33 @@ footer{
     margin: 0 2rem;
 }
 .copy-write{
-    font-size: 2.5rem;
+    font-size: 1.6rem;
+    color: white;
+    letter-spacing: .9rem;
+}
+
+/* media queries */
+@media(max-width:800px){
+    nav, .nav-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .nav-links a{
+        width: 100%;
+        text-align: center;
+        border: .1rem solid black;
+    }
+    .nav-links a:hover{
+        background-color: black;
+        color: white;
+        transition: 1.8s;
+    }
+    .nav-logo{
+        margin-bottom: 2rem;
+    }
+}
+@media(max-width:500px){
+
 }
