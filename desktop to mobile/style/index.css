@@ -3,6 +3,10 @@ html{
     font-family: 'Roboto', sans-serif;
     
 }
+/* fixes images from overflowing the parent element */
+img{
+    max-width: 100%;
+}
 h1{
     font-size: 3.6rem;
 }
@@ -73,6 +77,7 @@ header{
     justify-content: center;
     align-items: center;
     margin: 2.5rem 0;
+    
 }
 
 /* footer */
