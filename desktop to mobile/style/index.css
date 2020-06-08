@@ -33,11 +33,15 @@ nav, header, section, footer{
 /* navigation */
 nav, .nav-links{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+}
+nav{
+    width: 100%;
 }
 .nav-logo{
-    width: 80%;
+    width: 40%;
 }
 .nav-logo img{
     width: 100%;
@@ -70,14 +74,18 @@ header{
 }
 
 /* section */
-
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 .project-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 2.5rem 0;
-    
+    width: 30%;
 }
 
 /* footer */
@@ -97,41 +105,10 @@ footer{
     align-items: center;
 }
 .fab{
-    font-size: 4rem;
+    font-size: 8rem;
     color: black;
+    margin: 0 2rem;
 }
-
-/* desktop version */
-@media only screen and (min-width: 600px){
-    /* nav */
-    nav, .nav-links{
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    nav{
-        width: 100%;
-    }
-    .nav-logo{
-        width: 40%;
-    }
-
-    /* section */
-    section{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    .project-container{
-        width: 30%;
-    }
-
-    .fab{
-        font-size: 8rem;
-        color: black;
-        margin: 0 2rem;
-    }
-    .copy-write{
-        font-size: 2.5rem;
-    }
+.copy-write{
+    font-size: 2.5rem;
 }
