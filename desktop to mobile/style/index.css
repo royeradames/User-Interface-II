@@ -1,0 +1,202 @@
+/* Add CSS styling here Royer Adames */
+html{
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* fixes images from overflowing the parent element */
+img{
+    max-width: 100%;
+}
+h1{
+    font-size: 3.6rem;
+
+   
+}
+h1,.header-container p{
+ /* stoke so text have a better change of show with all the random images */
+ color: white;
+ text-shadow:
+-1px -1px 0 #000,  
+ 1px -1px 0 #000,
+ -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+h2{
+    font-size: 2.6rem;
+    margin-top: 1.5rem;
+}
+p, a{
+    font-size: 1.8rem;
+}
+p{
+    margin: 2.5rem 0;
+}
+.button{
+    padding: 2rem;
+    text-decoration: none;
+    letter-spacing: 1rem;
+}
+/* center main body */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav, header, section, footer{
+    margin: 2.5rem 0;
+}
+/* navigation */
+nav, .nav-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+nav{
+    width: 100%;
+}
+.nav-logo{
+    width: 40%;
+    padding: 1rem;
+}
+.nav-logo:hover{
+    border: .1rem solid black;
+    border-radius: .5rem;
+    transition: .1s;
+}
+.nav-logo img{
+    width: 100%;
+}
+.nav-links a{
+    text-decoration: none;
+    padding: 2rem;
+    color: black;
+    text-transform: uppercase;
+}
+.nav-links a:hover{
+    background-color: black;
+    color: white;
+    transition: 1.1s;
+}
+
+/* header */
+header{
+    height: 40vh;
+    width: 100%;
+    background-image: url(https://picsum.photos/1920/800);
+    background-repeat: no-repeat;
+    padding: .2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-container{
+    color: white;
+    padding: .2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: .1rem solid white;
+    padding: 2rem;
+    width: 50%;
+    margin: 0 auto;
+}
+.header-container h1{
+    letter-spacing: .8rem;
+}
+.header-container p{
+    letter-spacing: .2em;
+}
+.header-text{
+    text-align: center;
+    
+}
+/* section */
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.project-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0;
+    width: 30%;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    height: 25vh;
+}
+.footer-button{
+    border: .1rem solid white;
+    color: white;
+
+}
+.footer-button:hover{
+    background-color: white;
+    color: black;
+    border: none;
+    transition: 1.8s;
+}
+.fab{
+    font-size: 8rem;
+    color: black;
+    margin: 0 2rem;
+}
+.copy-write{
+    font-size: 1.6rem;
+    color: white;
+    letter-spacing: .9rem;
+}
+
+/* media queries */
+@media(max-width:800px){
+    nav, .nav-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .nav-links a{
+        width: 100%;
+        text-align: center;
+        border: .1rem solid black;
+    }
+    .nav-links a:hover{
+        background-color: black;
+        color: white;
+        transition: 1.8s;
+    }
+    .nav-logo{
+        margin-bottom: 2rem;
+        width: 60%;
+    }
+    .project-container{
+        width: 45%;
+    }
+}
+@media(max-width:500px){
+    .project-container{
+        width: 40%;
+    }
+    .nav-logo{
+        width: 90%;
+    }
+    .header-text h1{
+        line-height: 1.2;
+    }
+    .header-text p{
+        line-height: 1.4;
+    }
+}
